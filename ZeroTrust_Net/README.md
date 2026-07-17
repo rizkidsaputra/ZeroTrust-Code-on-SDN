@@ -8,9 +8,7 @@ Skrip **Mininet** yang membangun **data plane** testbed Zero Trust: ring **4 swi
 
 ## Topologi
 
-```
    ![topology](../attachment/topology.svg))
-```
 
 - **Host** di **port 1** tiap switch; **ring** pakai **port 2** (egress) & **port 3** (ingress); **nat0** menempel di **port 4** pada s1.
 - Ring: `s1–s2–s3–s4–s1`.
