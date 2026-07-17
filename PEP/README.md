@@ -60,19 +60,6 @@ flows stay active until you revoke them:
     python3 pep_client.py --logout 009252ddb355
 ```
 
-**Akses ditolak** (kredensial salah, atau trust di bawah ambang):
-
-```
-DENIED (403): trust below threshold  [tier=DENIED trust=35.0]
-  reasons: mac/ip binding mismatch, outside allowed hours
-```
-
-**PDP tak tercapai:**
-
-```
-! cannot reach PDP: <alasan>
-```
-
 ---
 
 ## Catatan penting

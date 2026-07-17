@@ -9,19 +9,7 @@ Skrip **Mininet** yang membangun **data plane** testbed Zero Trust: ring **4 swi
 ## Topologi
 
 ```
-   h1 10.0.0.1 Research            h2 10.0.0.2 Server
-        │ port 1                         │ port 1
-     ┌──┴──┐  p2 ──────────► p3      ┌──┴──┐
-     │ s1  │◄────────── p3    p2 ───►│ s2  │
-     └┬───┬┘                         └──┬──┘
-  p1  │   │ p4 → nat0 (10.0.0.254)      │ p2 / p3
-      │   └──────────────► NAT → VM1    │
-     p3                                 │
-     ┌──┴──┐  p2 ◄────────── p3     ┌───┴─┐
-     │ s4  │────────── p2    p3 ───►│ s3  │
-     └──┬──┘                        └──┬──┘
-        │ port 1                       │ port 1
-   h4 10.0.0.4 Guest              h3 10.0.0.3 IoT
+   ![topology](../attachment/topology.svg))
 ```
 
 - **Host** di **port 1** tiap switch; **ring** pakai **port 2** (egress) & **port 3** (ingress); **nat0** menempel di **port 4** pada s1.
